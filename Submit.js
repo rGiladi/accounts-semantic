@@ -2,9 +2,13 @@ import React from 'react'
 import { Button, Icon } from 'semantic-ui-react'
 
 const Submit = ({ text, onClick, disabled, icon, className, social }) => {
+
+  /* Social Button */
   if (social) {
-    const color = social === 'google' ? 'google plus' // semantic supports only "google plus" color string
-                : social === 'github' ? 'grey' : social
+    const color =
+        social === 'google' ? 'google plus' // semantic supports only "google plus" color string
+      : social === 'github' ? 'grey' // no color string for github
+      : social
 
     return (
       <Button color={color} onClick={onClick} className='social-btn'>
@@ -13,6 +17,7 @@ const Submit = ({ text, onClick, disabled, icon, className, social }) => {
     )
   }
 
+  /* Regular Button */
   return (
     <Button
       content={text}

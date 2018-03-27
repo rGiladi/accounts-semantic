@@ -9,5 +9,5 @@ Package.onUse(api => {
   api.versionsFrom('1.6.1')
 
   api.use('ecmascript')
-  api.mainModule('index.js', ['client', 'server'])
+  api.mainModule('index.js', 'client')
 })
