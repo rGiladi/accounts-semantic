@@ -38,6 +38,7 @@ const InputField = (fieldObj) => {
 }
 
 const iconMapper = {
+  username: 'user',
   email: 'mail',
   password: 'lock',
   confirmPassword: 'unlock alternate',
