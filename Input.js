@@ -22,7 +22,7 @@ const InputField = (fieldObj) => {
 
       <Input
         autoFocus={focusInput}
-        icon={icon || iconMapper[_id]}
+        icon={icon || iconMapper[_id] || null}
         iconPosition='left'
         placeholder={defaults.showPlaceholders ? placeholder : ''}
         type={type}
