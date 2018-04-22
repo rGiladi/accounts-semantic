@@ -11,7 +11,7 @@ const Submit = ({ text, onClick, disabled, icon, className, social }) => {
       : social
 
     return (
-      <Button color={color} onClick={onClick} className='social-btn'>
+      <Button color={color || null} onClick={onClick} className='social-btn'>
         <Icon name={social} /> Continue with {capitalize(social)}
       </Button>
     )
@@ -34,7 +34,6 @@ function capitalize (s) {
 }
 
 Submit.defaultProps = {
-  color: 'grey',
   icon: '',
   className: '',
   social: ''

@@ -1,11 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Form, Radio, Label } from 'semantic-ui-react'
 
 class RadioField extends React.Component {
 
   componentDidMount () {
-
     const {
       _id,
       options,
@@ -21,7 +19,6 @@ class RadioField extends React.Component {
   }
 
   render () {
-
     const {
       _id,
       values,
@@ -33,7 +30,6 @@ class RadioField extends React.Component {
     } = this.props
 
     return (
-
       <Form.Field required={required !== false} error={error ? true : false}>
 
         {defaults.showLabels && <label>{displayName}</label>}
@@ -57,13 +53,12 @@ class RadioField extends React.Component {
           {error && <Label basic color='red' pointing>{error.errStr}</Label>}
 
         </Form.Group>
-
+        
       </Form.Field>
     )
   }
 
   handleChange = (e, { value }) => {
-
     const {
       _id,
       onChange

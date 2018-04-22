@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Select } from 'semantic-ui-react'
 
 class SelectField extends React.Component {
@@ -9,7 +8,6 @@ class SelectField extends React.Component {
   }
 
   componentDidMount () {
-
     const {
       _id,
       options,
@@ -26,7 +24,6 @@ class SelectField extends React.Component {
   }
 
   render () {
-
     const {
       displayName,
       options,
@@ -36,7 +33,6 @@ class SelectField extends React.Component {
     const { defaultOption } = this.state
 
     return (
-
       <div>
 
         {defaults.showLabels && <label>{displayName}</label>}
@@ -50,12 +46,10 @@ class SelectField extends React.Component {
         />
 
       </div>
-
     )
   }
 
   handleChange = e => {
-
     const {
       _id,
       onChange
